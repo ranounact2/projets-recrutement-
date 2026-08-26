@@ -1,0 +1,133 @@
+/* =============================================================================
+   HEADER  —  blanc, collant, façon template
+   ============================================================================= */
+   @use 'variables' as *;
+.home-page header.white-header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    margin: 0;
+    padding: 8px max(24px, calc((100% - 1200px) / 2));
+    background: $bg-header;
+    border-bottom: 1px solid var(--hairline);
+    box-shadow: 0 1px 4px rgba(20, 32, 44, .06);
+}
+
+.home-page header .logo {
+    height: 62px;
+    width: auto;
+    display: block;
+}
+
+.home-page header .nav {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 24px;
+}
+
+.home-page header .menu-links {
+    display: flex;
+    align-items: center;
+    gap: clamp(18px, 3vw, 40px);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+}
+.home-page header .menu-links li { list-style: none; }
+.home-page header .menu-links a {
+    position: relative;
+    color: $text-dark !important;
+    font-size: .97rem;
+    font-weight: 500;
+    padding: 6px 2px;
+}
+.home-page header .menu-links a::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 2px;
+    border-radius: 2px;
+    background: $color-secondary;
+    transform: scaleX(0);
+    transition: transform .25s $transition-ease;
+}
+.home-page header .menu-links a:hover { color: var(--ink) !important; }
+.home-page header .menu-links a:hover::after { transform: scaleX(1); }
+.home-page header .menu-links a[href="/"] { color: var(--ink) !important; font-weight: 600; }
+.home-page header .menu-links a[href="/"]::after { transform: scaleX(1); }
+
+.home-page header .buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.home-page header .buttons button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    padding: 0 20px;
+    font-family: inherit;
+    font-size: .9rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    border-radius: var(--r-sm);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all .22s $transition-ease;
+}
+.home-page header .btn-white {
+    background: #fff;
+    border: 1.5px solid $color-navy;
+    color: $color-navy;
+}
+.home-page header .btn-white:hover {
+    background: $color-navy;
+    color: #fff;
+}
+.home-page header .btn-orange {
+    background: $color-secondary;
+    border: 1.5px solid $color-secondary;
+    color: #fff;
+}
+.home-page header .btn-orange:hover { background: var(--orange-600); border-color: var(--orange-600); box-shadow: var(--sh-orange); }
+
+.home-page header .burger { display: none; cursor: pointer; margin-left: auto; }
+.home-page header .burger-icon { width: 26px; height: 26px; }
+
+@media (max-width: 991px) {
+    .home-page header .burger { display: block; }
+    .home-page header .nav {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 0 22px;
+        max-height: 0;
+        overflow: hidden;
+        background: $bg-header;
+        transition: max-height .35s $transition-ease, padding .35s $transition-ease;
+    }
+    .home-page header .nav.open {
+        max-height: 460px;
+        padding: 14px 22px 22px;
+        box-shadow: 0 14px 24px -14px rgba(10, 69, 113, .35);
+    }
+    .home-page header .menu-links { flex-direction: column; align-items: stretch; gap: 0; margin: 0; }
+    .home-page header .menu-links a {
+        display: block;
+        padding: 13px 0;
+        border-bottom: 1px solid var(--hairline);
+    }
+    .home-page header .menu-links a::after { display: none; }
+    .home-page header .buttons { margin: 16px 0 0; flex-direction: column; align-items: stretch; }
+}

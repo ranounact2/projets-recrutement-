@@ -1,0 +1,19 @@
+{"_id":{"$oid":"5c24da94a66f9c7721549afe"},"name":"Comptabilité/Audit","slug":"comptabilite-audit"}
+{"_id":{"$oid":"5c24da94a66f9c7721549aff"},"name":"Relations Publiques","slug":"relations-publiques"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b00"},"name":"Agriculture","slug":"agriculture"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b01"},"name":"Architecture","slug":"architecture"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b02"},"name":"Banque/finance","slug":"banque-finance"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b03"},"name":"Informatique","slug":"informatique"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b04"},"name":"Industrie","slug":"industrie"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b05"},"name":"Assurance","slug":"assurance"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b06"},"name":"Publication/Impression","slug":"publication-impression"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b07"},"name":"Immobilier","slug":"immobilier"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b08"},"name":"Tourisme/hôtellerie et restauration","slug":"tourisme-hotellerie-et-restauration"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b09"},"name":"Transport/Logistique","slug":"transport-logistique"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b0a"},"name":"Commerce","slug":"commerce"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b0b"},"name":"Sport/divertissement","slug":"sport-divertissement"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b0c"},"name":"Télécommunication","slug":"telecommunication"}
+{"_id":{"$oid":"5c24da94a66f9c7721549b0d"},"name":"Ressources humaines","slug":"ressources-humaines"}
+{"_id":{"$oid":"5d8b8a881e7d7f362fbb0be8"},"name":"Secrétariat","slug":"secretariat"}
+{"_id":{"$oid":"5d8b8c1c1e7d7f362fbb0f14"},"name":"Marketing","slug":"marketing"}
+{"_id":{"$oid":"5d8cdd381e7d7f362fbbcbb8"},"name":"Autres","slug":"autres"}

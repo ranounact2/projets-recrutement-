@@ -1,0 +1,19 @@
+@use 'variables' as *;
+
+/* Polices */
+@font-face { font-family: 'Roboto-900'; font-display: swap; src: url(/assets/fonts/Roboto-Black.ttf) format('truetype'); }
+@font-face { font-family: 'Roboto-700'; font-display: swap; src: url(/assets/fonts/Roboto-Bold.ttf) format('truetype'); }
+@font-face { font-family: 'Roboto-300'; font-display: swap; src: url(/assets/fonts/Roboto-Light.ttf) format('truetype'); }
+@font-face { font-family: 'Roboto-500'; font-display: swap; src: url(/assets/fonts/Roboto-Medium.ttf) format('truetype'); }
+@font-face { font-family: 'Roboto-400'; font-display: swap; src: url(/assets/fonts/Roboto-Regular.ttf) format('truetype'); }
+
+/* Cookies */
+.cookies-banner { font-family: 'Roboto-400'; position: fixed; bottom: 0; left: 0; width: 100%; text-align: center; padding: .625rem 0; background: #9e9e9e; z-index: 10; font-size: 1rem; }
+.cookies-banner__know-more { border: 0; background-color: inherit; cursor: pointer; margin-right: .5rem; padding: 1rem 0 !important; font-size: 1rem; }
+.cookies-banner__accept { background: #518ff5; display: inline-block; padding: .4rem .95rem; border-radius: 5px; cursor: pointer; border: 0; }
+
+/* Fil d'Ariane */
+.breadcrumbs { display: flex; align-items: center; font-size: 14px; color: #333; }
+.breadcrumbs a { text-decoration: none; font-family: "Roboto"; color: #7B8B8E; transition: color .3s; }
+.breadcrumbs span { margin: 0 5px; color: black; }
+.breadcrumbs__link:hover { text-decoration: underline; }

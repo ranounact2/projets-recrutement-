@@ -1,0 +1,65 @@
+{"_id":{"$oid":"5c24db86a66f9c7721549b65"},"name":"Agadir","pays":"maroc","codePays":"MA","slug":"agadir","population":698310}
+{"_id":{"$oid":"5c24db86a66f9c7721549b66"},"name":"Al hoceima","pays":"maroc","codePays":"MA","slug":"al-hoceima","population":395644}
+{"_id":{"$oid":"5c24db86a66f9c7721549b67"},"name":"Aoussered","pays":"maroc","codePays":"MA","slug":"aoussered","population":5832}
+{"_id":{"$oid":"5c24db86a66f9c7721549b68"},"name":"Assilah","pays":"maroc","codePays":"MA","slug":"assilah","population":28861}
+{"_id":{"$oid":"5c24db86a66f9c7721549b69"},"name":"Azrou","pays":"maroc","codePays":"MA","slug":"azrou","population":48249}
+{"_id":{"$oid":"5c24db86a66f9c7721549b6a"},"name":"Beni mellal","pays":"maroc","codePays":"MA","slug":"beni-mellal","population":166399}
+{"_id":{"$oid":"5c24db86a66f9c7721549b6b"},"name":"Benslimane","pays":"maroc","codePays":"MA","slug":"benslimane","population":199612}
+{"_id":{"$oid":"5c24db86a66f9c7721549b6c"},"name":"Berkane","pays":"maroc","codePays":"MA","slug":"berkane","population":80721}
+{"_id":{"$oid":"5c24db86a66f9c7721549b6d"},"name":"Berrechid","pays":"maroc","codePays":"MA","slug":"berrechid","population":93954}
+{"_id":{"$oid":"5c24db86a66f9c7721549b6e"},"name":"Boujdour","pays":"maroc","codePays":"MA","slug":"boujdour","population":42651}
+{"_id":{"$oid":"5c24db86a66f9c7721549b6f"},"name":"Bouskoura","pays":"maroc","codePays":"MA","slug":"bouskoura","population":103026}
+{"_id":{"$oid":"5c24db86a66f9c7721549b70"},"name":"Bouznika","pays":"maroc","codePays":"MA","slug":"bouznika","population":27283}
+{"_id":{"$oid":"5c24db86a66f9c7721549b71"},"name":"Casablanca","pays":"maroc","codePays":"MA","slug":"casablanca","population":3144909}
+{"_id":{"$oid":"5c24db86a66f9c7721549b72"},"name":"Chafchaouen","pays":"maroc","codePays":"MA","slug":"chafchaouen","population":36280}
+{"_id":{"$oid":"5c24db86a66f9c7721549b73"},"name":"Dakhla","pays":"maroc","codePays":"MA","slug":"dakhla","population":55618}
+{"_id":{"$oid":"5c24db86a66f9c7721549b74"},"name":"El jadida","pays":"maroc","codePays":"MA","slug":"el-jadida","population":147549}
+{"_id":{"$oid":"5c24db86a66f9c7721549b75"},"name":"Errachidia","pays":"maroc","codePays":"MA","slug":"errachidia","population":92374}
+{"_id":{"$oid":"5c24db86a66f9c7721549b76"},"name":"Essaouira","pays":"maroc","codePays":"MA","slug":"essaouira","population":70634}
+{"_id":{"$oid":"5c24db86a66f9c7721549b77"},"name":"Essmara","pays":"maroc","codePays":"MA","slug":"essmara","population":42056}
+{"_id":{"$oid":"5c24db86a66f9c7721549b78"},"name":"Fès","pays":"maroc","codePays":"MA","slug":"fes","population":964891}
+{"_id":{"$oid":"5c24db86a66f9c7721549b79"},"name":"Fkih ben salah","pays":"maroc","codePays":"MA","slug":"fkih-ben-salah","population":84072}
+{"_id":{"$oid":"5c24db86a66f9c7721549b7a"},"name":"Guelmim","pays":"maroc","codePays":"MA","slug":"guelmim","population":118318}
+{"_id":{"$oid":"5c24db86a66f9c7721549b7b"},"name":"Guercif","pays":"maroc","codePays":"MA","slug":"guercif","population":57544}
+{"_id":{"$oid":"5c24db86a66f9c7721549b7c"},"name":"Ifrane","pays":"maroc","codePays":"MA","slug":"ifrane","population":13000}
+{"_id":{"$oid":"5c24db86a66f9c7721549b7d"},"name":"Kénitra","pays":"maroc","codePays":"MA","slug":"kenitra","population":366570}
+{"_id":{"$oid":"5c24db86a66f9c7721549b7f"},"name":"Khenifra","pays":"maroc","codePays":"MA","slug":"khenifra","population":73906}
+{"_id":{"$oid":"5c24db86a66f9c7721549b80"},"name":"Khmissat","pays":"maroc","codePays":"MA","slug":"khmissat","population":106991}
+{"_id":{"$oid":"5c24db86a66f9c7721549b81"},"name":"Khouribga","pays":"maroc","codePays":"MA","slug":"khouribga","population":167673}
+{"_id":{"$oid":"5c24db86a66f9c7721549b82"},"name":"Ksar el kebir","pays":"maroc","codePays":"MA","slug":"ksar-el-kebir","population":108753}
+{"_id":{"$oid":"5c24db86a66f9c7721549b83"},"name":"Laayoune","pays":"maroc","codePays":"MA","slug":"laayoune","population":217732}
+{"_id":{"$oid":"5c24db86a66f9c7721549b84"},"name":"Larache","pays":"maroc","codePays":"MA","slug":"larache","population":217732}
+{"_id":{"$oid":"5c24db86a66f9c7721549b85"},"name":"Marrakech","pays":"maroc","codePays":"MA","slug":"marrakech","population":839296}
+{"_id":{"$oid":"5c24db86a66f9c7721549b86"},"name":"Martil","pays":"maroc","codePays":"MA","slug":"martil","population":39738}
+{"_id":{"$oid":"5c24db86a66f9c7721549b87"},"name":"Meknès","pays":"maroc","codePays":"MA","slug":"meknes","population":545705}
+{"_id":{"$oid":"5c24db86a66f9c7721549b89"},"name":"Midelt","pays":"maroc","codePays":"MA","slug":"midelt","population":45159}
+{"_id":{"$oid":"5c24db86a66f9c7721549b8a"},"name":"Mohammedia","pays":"maroc","codePays":"MA","slug":"mohammedia","population":187708}
+{"_id":{"$oid":"5c24db86a66f9c7721549b8b"},"name":"Nador","pays":"maroc","codePays":"MA","slug":"nador","population":129260}
+{"_id":{"$oid":"5c24db86a66f9c7721549b8c"},"name":"Oualidia","pays":"maroc","codePays":"MA","slug":"oualidia","population":5826}
+{"_id":{"$oid":"5c24db86a66f9c7721549b8d"},"name":"Ouarzazate","pays":"maroc","codePays":"MA","slug":"ouarzazate","population":57245}
+{"_id":{"$oid":"5c24db86a66f9c7721549b8e"},"name":"Ouazzane","pays":"maroc","codePays":"MA","slug":"ouazzane","population":58684}
+{"_id":{"$oid":"5c24db86a66f9c7721549b8f"},"name":"Oujda","pays":"maroc","codePays":"MA","slug":"oujda","population":405253}
+{"_id":{"$oid":"5c24db86a66f9c7721549b90"},"name":"Rabat","pays":"maroc","codePays":"MA","slug":"rabat","population":1655753}
+{"_id":{"$oid":"5c24db86a66f9c7721549b91"},"name":"Safi","pays":"maroc","codePays":"MA","slug":"safi","population":288163}
+{"_id":{"$oid":"5c24db86a66f9c7721549b92"},"name":"Saidia","pays":"maroc","codePays":"MA","slug":"saidia","population":3871}
+{"_id":{"$oid":"5c24db86a66f9c7721549b93"},"name":"Salé","pays":"maroc","codePays":"MA","slug":"sale","population":903485}
+{"_id":{"$oid":"5c24db86a66f9c7721549b95"},"name":"Sefrou","pays":"maroc","codePays":"MA","slug":"sefrou","population":65150}
+{"_id":{"$oid":"5c24db86a66f9c7721549b96"},"name":"Settat","pays":"maroc","codePays":"MA","slug":"settat","population":119082}
+{"_id":{"$oid":"5c24db86a66f9c7721549b97"},"name":"Sidi bennour","pays":"maroc","codePays":"MA","slug":"sidi-bennour","population":40044}
+{"_id":{"$oid":"5c24db86a66f9c7721549b98"},"name":"Sidi ifni","slug":"sidi-ifni","pays":"maroc","codePays":"MA","population":20000}
+{"_id":{"$oid":"5c24db86a66f9c7721549b99"},"name":"Sidi kacem","slug":"sidi-kacem","pays":"maroc","codePays":"MA","population":74755}
+{"_id":{"$oid":"5c24db86a66f9c7721549b9a"},"name":"Sidi rahal","slug":"sidi-rahal","population":20628,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549b9b"},"name":"Sidi slimane","slug":"sidi-slimane","population":92989,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549b9c"},"name":"Tamensourte","slug":"tamensourte","population":50000,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549b9d"},"name":"Tamesna","slug":"tamesna","population":28119,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549b9e"},"name":"Tanger","slug":"tanger","population":688356,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549b9f"},"name":"Tantan","slug":"tantan","population":73209,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549ba0"},"name":"Tarfaya","slug":"tarfaya","population":8027,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549ba1"},"name":"Taroudant","slug":"taroudant","population":80149,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549ba2"},"name":"Taza","slug":"taza","population":645221,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549ba3"},"name":"Temara","slug":"temara","population":313510,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549ba4"},"name":"Tetouan","slug":"tetouan","population":380787,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549ba5"},"name":"Tifelt","slug":"tifelt","population":86709,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549ba6"},"name":"Tinghir","slug":"tinghir","population":42044,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5c24db86a66f9c7721549ba7"},"name":"Tiznit","slug":"tiznit","population":74699,"codePays":"MA","pays":"maroc"}
+{"_id":{"$oid":"5d6532cd36ec5596fa75a211"},"name":"Autres","slug":"autres","population":0.0,"codePays":"MA","pays":"maroc"}

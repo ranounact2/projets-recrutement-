@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /rtsystems_admin_*
+
+Sitemap: https://emploismaroc.ma/sitemap.xml

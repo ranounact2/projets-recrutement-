@@ -1,0 +1,15 @@
+/target/
+/.idea/
+/.project
+/.classpath
+/.settings/
+emploismaroc.iml
+# Local configuration files (should not be committed)
+config.local.properties
+src/main/resources/config/config.local.properties
+src/main/resources/config/config.dev.properties
+src/main/resources/config/config.staging.properties
+/src/main/resources/public/assets/css-min/
+/src/main/resources/public/assets/js-min/
+/src/main/resources/public/assets/img/companies/
+dependency-reduced-pom.xml

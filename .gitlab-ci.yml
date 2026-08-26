@@ -1,0 +1,53 @@
+variables:
+  OUTPUT: emploismaroc.jar
+  REMOTE_DIR: /opt/emploismaroc
+  # Tests activés : MongoDB fourni par le service GitLab CI (pas de Docker/Testcontainers sur le runner LXC)
+stages:
+  - build
+  - deploy
+build-compile:
+  tags :
+    - runner-emploi
+  stage: build
+  image: maven:3.9.7-eclipse-temurin-17
+  services:
+    - name: mongo:6
+      alias: mongo
+  variables:
+    # Les tests utilisent cette URI pour se connecter au MongoDB du job (service mongo)
+    EM_MONGO_URI: "mongodb://mongo:27017"
+  script:
+    - mkdir -p src/main/resources/public/assets/css-min
+    - mkdir -p src/main/resources/public/assets/js-min
+    - mvn -B clean install
+  artifacts:
+    paths:
+      - ./target/$OUTPUT
+      - ./src/main/resources/config
+    expire_in: 10 mins
+
+deploy-test:
+  tags :
+    - runner-emploi
+  stage: deploy
+  image: debian:11
+  before_script:
+    - apt update && apt upgrade -y
+    - apt install -y rsync
+    - apt install -y openssh-client
+    - mkdir -m 0700 -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+    - printenv SSH_PRIV_KEY | ssh-add -
+  script:
+    - scp -r ./target/$OUTPUT $SSH_TEST_USER@$SERVER_TEST_IP:/home/debian/emploimaroc
+    - scp -r ./src/main/resources/config $SSH_TEST_USER@$SERVER_TEST_IP:/home/debian/emploimaroc/
+    - ssh $SSH_TEST_USER@$SERVER_TEST_IP "/snap/bin/lxc file push /home/debian/emploimaroc/$OUTPUT emploi-maroc/$REMOTE_DIR/$OUTPUT" --create-dirs
+    - ssh $SSH_TEST_USER@$SERVER_TEST_IP "/snap/bin/lxc file push -r /home/debian/emploimaroc/config emploi-maroc/$REMOTE_DIR/" --create-dirs
+    - ssh $SSH_TEST_USER@$SERVER_TEST_IP "/usr/bin/rm /home/debian/emploimaroc/$OUTPUT"
+    - ssh $SSH_TEST_USER@$SERVER_TEST_IP "/usr/bin/rm -rf /home/debian/emploimaroc/config"
+    - ssh $SSH_TEST_USER@$SERVER_TEST_IP  "/snap/bin/lxc exec emploi-maroc -- systemctl restart emploismaroc"
+    - ssh $SSH_TEST_USER@$SERVER_TEST_IP  "/snap/bin/lxc exec emploi-maroc -- systemctl status emploismaroc --no-pager -l"
+  only:
+    - main
+

@@ -1,0 +1,131 @@
+page;url;zone;var;value;istemplate;isSpin
+front/result.ftl;/categorie;head;title;Offres d'emploi dans le domaine de votre choix;false;false
+front/result.ftl;/categorie;head;meta_description;Trouvez l'emploi dans le secteur de votre choix;false;false
+front/result.ftl;/categorie;head;meta_keyword;Emploi dans le secteur qui vous convient;false;false
+front/result.ftl;/categorie;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""WebSite"";""name"":""EmploiMaroc"";""url"":""https://www.emploi-maroc.com"";""description"":""Trouvez l'emploi dans le secteur de votre choix""}";false;false
+front/result.ftl;/categorie;content;h1;Trouvez les offres d'emploi près de chez vous;false;false
+front/result.ftl;/categorie;content;h1_block;"À la recherche de votre premier emploi ? D'opportunités pour booster votre carrière ? Curieux du marché du travail actuel ? Envie d'une reconversion professionnelle ? Que vous cherchiez un emploi à temps plein; à temps partiel ou autre; vous êtes au bon endroit ! Explorez nos offres par catégorie; région ou ville et trouvez votre prochaine opportunité sur EmploiMaroc !";false;false
+front/result.ftl;/categorie;footer;title_footer;Retrouvez-nous sur les réseaux;false;false
+front/result.ftl;/categorie;footer;text_footer;"Suivez-nous sur les réseaux sociaux pour ne rater aucune opportunité d'emploi au Maroc. Rejoignez notre communauté et soyez informé des dernières offres.";false;false
+front/result.ftl;/categorie;footer;text_footer_bottom;"© 2025 EmploiMaroc – Tous droits réservés. Site d'offres d'emploi au Maroc.";false;false
+
+
+front/result.ftl;/region;head;title;Offres d'emploi par région au Maroc;false;false
+front/result.ftl;/region;head;meta_description;Trouvez un emploi dans votre région au Maroc;false;false
+front/result.ftl;/region;head;meta_keyword;emploi région Maroc recrutement;false;false
+front/result.ftl;/region;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""WebPage"";""name"":""Offres d'emploi par région"";""description"":""Trouvez un emploi dans votre région""}";false;false
+front/result.ftl;/region;content;h1;Trouvez un emploi près de chez vous;false;false
+front/result.ftl;/region;content;h1_block;Découvrez toutes les offres d'emploi disponibles dans votre région;false;false
+front/result.ftl;/region;footer;title_footer;Retrouvez-nous sur les réseaux;false;false
+front/result.ftl;/region;footer;text_footer;"Suivez-nous sur les réseaux sociaux pour ne rater aucune opportunité";false;false
+front/result.ftl;/region;footer;text_footer_bottom;"© 2025 EmploiMaroc – Tous droits réservés";false;false
+
+front/result.ftl;/categorie/:domain;head;title;Offres d'emploi dans le domaine ${domain};true;true
+front/result.ftl;/categorie/:domain;head;meta_description;Trouvez un emploi dans le secteur ${domain} au Maroc;true;false
+front/result.ftl;/categorie/:domain;head;meta_keyword;emploi ${domain} Maroc recrutement;true;false
+front/result.ftl;/categorie/:domain;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""WebPage"";""name"":""Offres d'emploi ${domain}"";""description"":""Trouvez un emploi dans le domaine ${domain}""}";true;false
+front/result.ftl;/categorie/:domain;content;h1;Les meilleures offres d'emploi en ${domain};true;true
+front/result.ftl;/categorie/:domain;content;h1_block;Découvrez toutes les opportunités d'emploi dans le secteur ${domain};true;false
+front/result.ftl;/categorie/:domain;footer;title_footer;Retrouvez-nous sur les réseaux;false;false
+front/result.ftl;/categorie/:domain;footer;text_footer;Suivez-nous sur les réseaux sociaux;false;false
+front/result.ftl;/categorie/:domain;footer;text_footer_bottom;"© 2025 EmploiMaroc – Tous droits réservés";false;false
+
+front/result.ftl;/categorie/:domain/:region;head;title;Offres d'emploi ${domain} dans la région ${region};true;true
+front/result.ftl;/categorie/:domain/:region;head;meta_description;Trouvez un emploi dans le domaine ${domain} en région ${region};true;false
+front/result.ftl;/categorie/:domain/:region;head;meta_keyword;emploi ${domain} ${region} Maroc;true;false
+front/result.ftl;/categorie/:domain/:region;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""WebPage"";""name"":""Offres d'emploi ${domain} ${region}""}";true;false
+front/result.ftl;/categorie/:domain/:region;content;h1;Opportunités d'emploi en ${domain} dans ${region};true;true
+front/result.ftl;/categorie/:domain/:region;content;h1_block;Découvrez les offres d'emploi dans le domaine ${domain} en région ${region};true;false
+front/result.ftl;/categorie/:domain/:region;footer;title_footer;Retrouvez-nous;false;false
+front/result.ftl;/categorie/:domain/:region;footer;text_footer;Suivez-nous;false;false
+front/result.ftl;/categorie/:domain/:region;footer;text_footer_bottom;"© 2025 EmploiMaroc";false;false
+
+front/result.ftl;/categorie/:domain/:region/:ville;head;title;Offres d'emploi ${domain} à ${ville};true;true
+front/result.ftl;/categorie/:domain/:region/:ville;head;meta_description;Trouvez un emploi dans le domaine ${domain} à ${ville};true;false
+front/result.ftl;/categorie/:domain/:region/:ville;head;meta_keyword;emploi ${domain} ${ville};true;false
+front/result.ftl;/categorie/:domain/:region/:ville;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""WebPage"";""name"":""Offres d'emploi ${domain} à ${ville}""}";true;false
+front/result.ftl;/categorie/:domain/:region/:ville;content;h1;Opportunités d'emploi en ${domain} à ${ville};true;true
+front/result.ftl;/categorie/:domain/:region/:ville;content;h1_block;Postulez aux offres d'emploi dans le domaine ${domain} à ${ville};true;false
+front/result.ftl;/categorie/:domain/:region/:ville;footer;title_footer;Retrouvez-nous;false;false
+front/result.ftl;/categorie/:domain/:region/:ville;footer;text_footer;Suivez-nous;false;false
+front/result.ftl;/categorie/:domain/:region/:ville;footer;text_footer_bottom;"© 2025 EmploiMaroc";false;false
+
+front/result.ftl;/region/:region;head;title;Offres d'emploi dans la région ${region};true;true
+front/result.ftl;/region/:region;head;meta_description;Trouvez un emploi dans la région ${region} au Maroc;true;false
+front/result.ftl;/region/:region;head;meta_keyword;emploi ${region} Maroc;true;false
+front/result.ftl;/region/:region;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""WebPage"";""name"":""Offres d'emploi ${region}""}";true;false
+front/result.ftl;/region/:region;content;h1;Les meilleures offres d'emploi en ${region};true;true
+front/result.ftl;/region/:region;content;h1_block;Découvrez toutes les opportunités d'emploi dans la région ${region};true;false
+front/result.ftl;/region/:region;footer;title_footer;Retrouvez-nous;false;false
+front/result.ftl;/region/:region;footer;text_footer;Suivez-nous;false;false
+front/result.ftl;/region/:region;footer;text_footer_bottom;"© 2025 EmploiMaroc";false;false
+
+front/result.ftl;/region/:region/:ville;head;title;Offres d'emploi à ${ville} en ${region};true;true
+front/result.ftl;/region/:region/:ville;head;meta_description;Trouvez un emploi à ${ville} dans la région ${region};true;false
+front/result.ftl;/region/:region/:ville;head;meta_keyword;emploi ${ville} ${region} Maroc;true;false
+front/result.ftl;/region/:region/:ville;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""WebPage"";""name"":""Offres d'emploi à ${ville}""}";true;false
+front/result.ftl;/region/:region/:ville;content;h1;Opportunités d'emploi à ${ville};true;true
+front/result.ftl;/region/:region/:ville;content;h1_block;Postulez aux offres d'emploi disponibles à ${ville};true;false
+front/result.ftl;/region/:region/:ville;footer;title_footer;Retrouvez-nous;false;false
+front/result.ftl;/region/:region/:ville;footer;text_footer;Suivez-nous;false;false
+front/result.ftl;/region/:region/:ville;footer;text_footer_bottom;"© 2025 EmploiMaroc";false;false
+
+front/temp/index.ftl;/;head;title;EmploiMaroc - Trouvez votre emploi au Maroc;false;false
+front/temp/index.ftl;/;head;meta_description;Le site d'emploi numéro 1 au Maroc;false;false
+front/temp/index.ftl;/;head;meta_keyword;emploi; recrutement; Maroc;false;false
+front/temp/index.ftl;/;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""WebSite"";""name"":""EmploiMaroc"";""url"":""https://www.emploi-maroc.com"";""description"":""Trouvez votre emploi au Maroc""}";false;false
+front/temp/index.ftl;/;content;h1;Des milliers d'offres d'emploi au Maroc;false;false
+front/temp/index.ftl;/;content;h1_block;Trouvez votre prochain job en quelques clics;false;false
+front/temp/index.ftl;/;footer;title_footer;Retrouvez-nous;false;false
+front/temp/index.ftl;/;footer;text_footer;Suivez-nous sur les réseaux;false;false
+front/temp/index.ftl;/;footer;text_footer_bottom;© 2025 EmploiMaroc;false;false
+
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;head;title;Offre d'emploi - Détail;false;false
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;head;meta_description;Postulez à cette offre d'emploi;true;false
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;head;meta_keyword;emploi; offre d'emploi; recrutement;true;false
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""JobPosting"";""title"":""{title}""}";true;false
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;content;h1;{title};true;false
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;content;h1_block;Description complète du poste et conditions de recrutement;false;false
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;footer;title_footer;Retrouvez-nous;false;false
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;footer;text_footer;Suivez-nous;false;false
+front/temp/job-detail.ftl;/offre-emploi-maroc/:id;footer;text_footer_bottom;© 2025 EmploiMaroc;false;false
+
+front/contact.ftl;/contact;head;title;Contactez-nous - EmploiMaroc;false;false
+front/contact.ftl;/contact;head;meta_description;Une question ? Contactez l'équipe EmploiMaroc;false;false
+front/contact.ftl;/contact;head;meta_keyword;contact; assistance; support;false;false
+front/contact.ftl;/contact;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""ContactPage"";""name"":""Contact""}";false;false
+front/contact.ftl;/contact;content;h1;Contactez-nous;false;false
+front/contact.ftl;/contact;content;h1_block;N'hésitez pas à nous contacter pour toute question;false;false
+front/contact.ftl;/contact;footer;title_footer;Retrouvez-nous;false;false
+front/contact.ftl;/contact;footer;text_footer;Suivez-nous sur les réseaux;false;false
+front/contact.ftl;/contact;footer;text_footer_bottom;© 2025 EmploiMaroc;false;false
+
+front/about.ftl;/a-propos-emplois-maroc;head;title;À propos - EmploiMaroc;false;false
+front/about.ftl;/a-propos-emplois-maroc;head;meta_description;Découvrez EmploiMaroc; la plateforme d'emploi leader au Maroc;false;false
+front/about.ftl;/a-propos-emplois-maroc;head;meta_keyword;à propos; emploi; Maroc; recrutement;false;false
+front/about.ftl;/a-propos-emplois-maroc;head;json-ld;"{""@context"":""https://schema.org"";""@type"":""AboutPage"";""name"":""À propos""}";false;false
+front/about.ftl;/a-propos-emplois-maroc;content;h1;À propos de EmploiMaroc;false;false
+front/about.ftl;/a-propos-emplois-maroc;content;h1_block;"EmploiMaroc est la plateforme d'emploi leader au Maroc; connectant candidats et recruteurs.";false;false
+front/about.ftl;/a-propos-emplois-maroc;footer;title_footer;Retrouvez-nous;false;false
+front/about.ftl;/a-propos-emplois-maroc;footer;text_footer;Suivez-nous sur les réseaux;false;false
+front/about.ftl;/a-propos-emplois-maroc;footer;text_footer_bottom;© 2025 EmploiMaroc;false;false
+
+front/add-applicant.ftl;/postuler-emploi/:id;head;title;Postuler à une offre d'emploi - EmploiMaroc;false;false
+front/add-applicant.ftl;/postuler-emploi/:id;head;meta_description;Postulez à cette offre d'emploi et rejoignez les meilleures entreprises au Maroc;false;false
+front/add-applicant.ftl;/postuler-emploi/:id;head;meta_keyword;postuler; candidature; emploi; Maroc; recrutement;false;false
+front/add-applicant.ftl;/postuler-emploi/:id;content;h1;Ajouter une candidature;false;false
+front/add-applicant.ftl;/postuler-emploi/:id;content;h1_block;Prenez quelques minutes pour réunir toutes les informations utiles avant de remplir ce formulaire. Rédigez une motivation concise, évitez les répétitions et mettez en avant vos compétences clés liées à l'offre sélectionnée.;false;false
+front/add-applicant.ftl;/postuler-emploi/:id;footer;title_footer;Retrouvez-nous sur les réseaux;false;false
+front/add-applicant.ftl;/postuler-emploi/:id;footer;text_footer;Suivez-nous sur les réseaux sociaux pour ne rater aucune opportunité d'emploi au Maroc;false;false
+front/add-applicant.ftl;/postuler-emploi/:id;footer;text_footer_bottom;© 2025 EmploiMaroc – Tous droits réservés. Site d'offres d'emploi au Maroc.;false;false
+
+
+
+
+front/offre.ftl;/ajouter-offre-emploi;head;title;Ajouter une offre d'emploi - EmploiMaroc;false;false
+front/offre.ftl;/ajouter-offre-emploi;content;h1;Ajouter une offre d'emploi;false;false
+front/offre.ftl;/ajouter-offre-emploi;content;h2;Offre d'emploi (service gratuit);false;false
+front/offre.ftl;/ajouter-offre-emploi;content;h1_block;Prenez le temps pour préparer tous les éléments nécessaires...;false;false
+front/offre.ftl;/ajouter-offre-emploi;footer;title_footer;Retrouvez-nous;false;false
+front/offre.ftl;/ajouter-offre-emploi;footer;text_footer;Suivez-nous;false;false
+front/offre.ftl;/ajouter-offre-emploi;footer;text_footer_bottom;© 2025 EmploiMaroc;false;false

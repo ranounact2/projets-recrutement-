@@ -1,0 +1,3 @@
+MONGO_ARCHIVE=mongodb-linux-x86_64-ubuntu1804-5.0.2.tgz
+MONGO_ARCHIVE_DIR=mongodb-linux-x86_64-ubuntu1804-5.0.2
+INSTALL_DIR=$HOME"/dev/app"

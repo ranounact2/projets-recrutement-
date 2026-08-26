@@ -1,0 +1,1484 @@
+[{
+  "_id": {
+    "$oid": "62a0bf08a965ad5a63d978f5"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654701832384"
+    }
+  },
+  "enabled": true,
+  "nom": "Corrupti laborum re",
+  "prenom": "Velit quo elit earu",
+  "email": "dikasuhim@mailinator.com",
+  "motivation": "Numquam nisi quibusd",
+  "experienceLevel": "De 3 à 5 ans",
+  "formation": "Bac +4",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0bf4da965ad5af7f264e8"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654701901598"
+    }
+  },
+  "enabled": true,
+  "nom": "Consequat Incidunt",
+  "prenom": "Ut perspiciatis ten",
+  "email": "qymyxozepa@mailinator.com",
+  "motivation": "Blanditiis ut adipis",
+  "experienceLevel": "De 1 à 3 ans",
+  "formation": "Bac",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0bfd7a965ad5bd19e3e5f"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654702039060"
+    }
+  },
+  "enabled": true,
+  "nom": "Necessitatibus ullam",
+  "prenom": "Laboris eius quo a r",
+  "email": "vuceh@mailinator.com",
+  "motivation": "Unde commodi laboris",
+  "experienceLevel": "Plus de 20 ans",
+  "formation": "Bac +3",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c01ea965ad5c80ccb58d"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654702109831"
+    }
+  },
+  "enabled": true,
+  "nom": "Lorem reiciendis exp",
+  "prenom": "Voluptas quos est an",
+  "email": "dacuxyto@mailinator.com",
+  "motivation": "Voluptatem Molestia",
+  "experienceLevel": "De 5 à 10 ans",
+  "formation": "Bac +5 et plus",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c057a965ad5d13af228d"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654702167520"
+    }
+  },
+  "enabled": true,
+  "nom": "Ut dolor adipisci et",
+  "prenom": "Esse fugit omnis d",
+  "email": "dyde@mailinator.com",
+  "motivation": "Excepturi repudianda",
+  "experienceLevel": "Moins de 1 an",
+  "formation": "Bac +4",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c0aaa965ad5dbe24746b"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654702249851"
+    }
+  },
+  "enabled": true,
+  "nom": "Temporibus quas aliq",
+  "prenom": "Nostrud impedit exp",
+  "email": "notarubo@mailinator.com",
+  "motivation": "Aut qui proident fu",
+  "experienceLevel": "Débutant",
+  "formation": "Bac +4",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c0dfa965ad5e4eaad457"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654702303008"
+    }
+  },
+  "enabled": true,
+  "nom": "Adipisicing et conse",
+  "prenom": "Quisquam sint paria",
+  "email": "jenuxe@mailinator.com",
+  "motivation": "Sequi ut iste est m",
+  "experienceLevel": "De 3 à 5 ans",
+  "formation": "Sans",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c107a965ad5ed90df282"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654702343596"
+    }
+  },
+  "enabled": true,
+  "nom": "Optio alias dolor v",
+  "prenom": "Alias non dignissimo",
+  "email": "faba@mailinator.com",
+  "motivation": "Quasi sit mollit cu",
+  "experienceLevel": "Plus de 20 ans",
+  "formation": "Bac +5 et plus",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c284a965ad5fddf636ea"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654702723493"
+    }
+  },
+  "enabled": true,
+  "nom": "Dolor voluptatum rec",
+  "prenom": "Ipsum nihil sunt tem",
+  "email": "qekycy@mailinator.com",
+  "motivation": "Officia praesentium ",
+  "experienceLevel": "De 1 à 3 ans",
+  "formation": "Bac +4",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c2bba965ad60c4d56df2"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654702778588"
+    }
+  },
+  "enabled": true,
+  "nom": "Dolor cumque sint du",
+  "prenom": "At sint quis molesti",
+  "email": "bafim@mailinator.com",
+  "motivation": "Ut quis sunt ea labo",
+  "experienceLevel": "De 5 à 10 ans",
+  "formation": "Bac",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c4cfa965ad63a106b29e"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654703310905"
+    }
+  },
+  "enabled": true,
+  "nom": "Dolor qui eius quaer",
+  "prenom": "Tempor sed dolorum e",
+  "email": "tamedycycu@mailinator.com",
+  "motivation": "Quo voluptatem offic",
+  "experienceLevel": "De 5 à 10 ans",
+  "formation": "Bac",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a0c507a965ad643645d76b"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654703366518"
+    }
+  },
+  "enabled": true,
+  "nom": "Accusantium itaque d",
+  "prenom": "Odit ipsum sunt tem",
+  "email": "cehepedic@mailinator.com",
+  "motivation": "Magna do exercitatio",
+  "experienceLevel": "Plus de 20 ans",
+  "formation": "Sans",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376ec932b04d171019ed5e",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a1c79ca965ad3ddc6b56c2"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654769563836"
+    }
+  },
+  "enabled": true,
+  "nom": "Porro iusto distinct",
+  "prenom": "Fugiat voluptate au",
+  "email": "kugowo@mailinator.com",
+  "motivation": "Dolorem facere aut e",
+  "experienceLevel": "De 5 à 10 ans",
+  "formation": "Sans",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376efb32b04d171019ed62",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a1cc90a965ad45d15896c3"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654770832524"
+    }
+  },
+  "enabled": true,
+  "nom": "Ipsam eligendi nihil",
+  "prenom": "Voluptate sed maiore",
+  "email": "xisikuva@mailinator.com",
+  "motivation": "Irure rerum qui quos",
+  "experienceLevel": "De 3 à 5 ans",
+  "formation": "Sans",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376efb32b04d171019ed62",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a1ccc2a965ad4679d04533"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654770882261"
+    }
+  },
+  "enabled": true,
+  "nom": "Voluptatum in lorem ",
+  "prenom": "Aute eveniet dolor ",
+  "email": "lycyhyw@mailinator.com",
+  "motivation": "Quis deserunt sint v",
+  "experienceLevel": "De 3 à 5 ans",
+  "formation": "Bac",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "5c376efb32b04d171019ed62",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "62a1db12a965ad62ea0aaccc"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1654774545872"
+    }
+  },
+  "enabled": true,
+  "nom": "Quis ducimus aut to",
+  "prenom": "Atque molestias in s",
+  "email": "fygy@mailinator.com",
+  "motivation": "Est doloremque omni",
+  "experienceLevel": "Moins de 1 an",
+  "formation": "Bac",
+  "phone": "0615403318",
+  "state": "new",
+  "jobId": "62a1d873a965ad5e3f3cace7",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c2f34ada544b63b0cbc4554"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1546597548872"
+    }
+  },
+  "code": "5c2e40f5a544b61554e9c048",
+  "enabled": true,
+  "title": "Test Job update updated",
+  "content": "Test Job update updated",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "Freelance",
+  "phone": "0661623948",
+  "city": "Azrou",
+  "domain": "TourismeTourisme/Hotellerie/Restauration",
+  "nbrDePostes": 0,
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4
+},{
+  "_id": {
+    "$oid": "5c2f418fa544b6398cef7374"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1546600847154"
+    }
+  },
+  "code": "5c2f33d1a544b63b0cbc4553",
+  "enabled": true,
+  "title": "Test Job maroc udated",
+  "content": "Test Job maroc updated",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Aoussered",
+  "domain": "Agriculture",
+  "nbrDePostes": 0,
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4
+},{
+  "_id": {
+    "$oid": "5c34633ba544b61d00226737"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1546937146515"
+    }
+  },
+  "enabled": true,
+  "title": "Test Job validation",
+  "content": "Test Job validation",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "Stage",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Comptabilité/Audit",
+  "nbrDePostes": 5,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4
+},{
+  "_id": {
+    "$oid": "5c3719c3a544b613a88525f6"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4
+},{
+  "_id": {
+    "$oid": "5c376ebf32b04d171019ed5b"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4
+},{
+  "_id": {
+    "$oid": "5c376ec232b04d171019ed5c"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "updated",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c376ec632b04d171019ed5d"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4
+},{
+  "_id": {
+    "$oid": "5c376ec932b04d171019ed5e"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "valid",
+  "stateRank": 3
+},{
+  "_id": {
+    "$oid": "5c376eda32b04d171019ed5f"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "updated_verified",
+  "stateRank": 1
+},{
+  "_id": {
+    "$oid": "5c376edf32b04d171019ed60"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547649280550"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c376ef732b04d171019ed61"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "valid",
+  "stateRank": 3
+},{
+  "_id": {
+    "$oid": "5c376efb32b04d171019ed62"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "valid",
+  "stateRank": 3
+},{
+  "_id": {
+    "$oid": "5c376efe32b04d171019ed63"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": " omar De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new_verified",
+  "stateRank": 1
+},{
+  "_id": {
+    "$oid": "5c376f0132b04d171019ed64"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c376f0332b04d171019ed65"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "valid",
+  "stateRank": 3
+},{
+  "_id": {
+    "$oid": "5c376f0632b04d171019ed66"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "valid",
+  "stateRank": 3
+},{
+  "_id": {
+    "$oid": "5c3770fb32b04d171019ed67"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547114947337"
+    }
+  },
+  "enabled": true,
+  "title": "Leader Technique Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.\r\nDe formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA \r\n\r\n    Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, \r\n    Vous êtes force de proposition et aimez travailler en équipe. \r\n    Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. \r\n\r\nComme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "contact@centoria.fr",
+  "secretCode": "e3915fb17987b20969bd57876741036d",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Fès",
+  "domain": "Telecommunication",
+  "nbrDePostes": 10,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "valid",
+  "stateRank": 3
+},{
+  "_id": {
+    "$oid": "5c37837fa544b62db452b3f8"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547142015134"
+    }
+  },
+  "enabled": false,
+  "title": "test",
+  "content": "tretré\"r\"é \"fzqffdsqs",
+  "email": "rrrtr@yyy.jj",
+  "secretCode": "f13213343db96df1b7dd37ce09a152d8",
+  "type": "CDI - Temps complet",
+  "phone": "0632584109",
+  "city": "Bouznika",
+  "domain": "Immobilier",
+  "nbrDePostes": 1,
+  "confidentiality": "Mes coordonnées sont publiques",
+  "companyName": "rtert",
+  "companyCode": "174274",
+  "state": "deleted",
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547142106772"
+    }
+  },
+  "stateRank": 5
+},{
+  "_id": {
+    "$oid": "5c3783daa544b62db452b3f9"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547142106653"
+    }
+  },
+  "code": "5c37837fa544b62db452b3f8",
+  "enabled": true,
+  "title": "test",
+  "content": "tretré\"r\"é \"fzqffdsqs",
+  "email": "rrrtr@yyy.jj",
+  "secretCode": "f13213343db96df1b7dd37ce09a152d8",
+  "type": "CDI - Temps complet",
+  "phone": "0632584109",
+  "city": "Agadi",
+  "domain": "Immobilier",
+  "nbrDePostes": 1,
+  "confidentiality": "Mes coordonnées sont publiques",
+  "companyName": "rtert",
+  "companyCode": "174274",
+  "state": "disabled",
+  "stateRank": 4,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547647686020"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c3db57da544b61dd8fdefcd"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547548029303"
+    }
+  },
+  "enabled": true,
+  "title": "Developpeur Confirmé Java/JEE",
+  "content": "De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, Vous êtes force de proposition et aimez travailler en équipe. Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. Comme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap. De formation Bac+5 ou équivalent, vous justifiez d'une expérience professionnelle de plus de 5 ans dans un poste similaire et disposez de compétences en développement JAVA Vous avez une bonne communication en Français, vous êtes autonome, organisé et rigoureux, Vous êtes force de proposition et aimez travailler en équipe. Votre passion pour les métiers de l'informatique et votre sens du service sont autant d’atouts qui vous permettront de mener à bien vos missions et d'évoluer au sein de notre entreprise. Comme tous les postes de notre entreprise, à compétences égales, ce poste est ouvert aux personnes en situation de handicap.",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Safi",
+  "domain": "InformatInformatique",
+  "nbrDePostes": 6,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547647678257"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c3f08b8a544b62120ccb656"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547634871753"
+    }
+  },
+  "code": "afae5c7e85511d9c10400e1e5583e029",
+  "enabled": true,
+  "title": "Test Email Verification",
+  "content": "Test Email Verification.\r\nRédigez votre annonce en respectant les consignes ssuivantes : L'annonce doit décrire le poste, le profil du candidat recherché Vous pouvez placer vos coordonnées à l'intérieur de l'annonce. Nous validons les annonces, en cas de non conformité nous vous alerterons par email. Une fois l'annonce rédigé vous recevrez un email pour valider l'annonce. Vous pouvez choisir de cacher vos coordonnées totalement dans ce cas, vous recevrez des candidatures via notre site. Vous pouvez choisir de dévoiler vos coordonnées au candidats d'une de vos annonces, dans ce cas le candidats reçois par email vos coordonées. Enfin vous être libre de placer vos coordonnées dans l'annonce.",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDD",
+  "phone": "0661623948",
+  "city": "Meknès",
+  "domain": "Assurance",
+  "nbrDePostes": 4,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c3f1137a544b62120191cb9"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547637047213"
+    }
+  },
+  "code": "701a71283fa6ddd1569ed2577e390052",
+  "enabled": true,
+  "title": "Test Email Verification 2",
+  "content": "Rédigez votre annonce en respectant les consignes ssuivantes : L'annonce doit décrire le poste, le profil du candidat recherché Vous pouvez placer vos coordonnées à l'intérieur de l'annonce. Nous validons les annonces, en cas de non conformité nous vous alerterons par email. Une fois l'annonce rédigé vous recevrez un email pour valider l'annonce. Vous pouvez choisir de cacher vos coordonnées totalement dans ce cas, vous recevrez des candidatures via notre site. Vous pouvez choisir de dévoiler vos coordonnées au candidats d'une de vos annonces, dans ce cas le candidats reçois par email vos coordonées. Enfin vous être libre de placer vos coordonnées dans l'annonce. ",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps partiel",
+  "phone": "0661623948",
+  "city": "Al hoceima",
+  "domain": "Agriculture",
+  "experienceLevel": "Moins de 1 an",
+  "formation": "Bac +3",
+  "nbrDePostes": 3,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new_verified",
+  "stateRank": 1,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547637144449"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c3f1737a544b63394f632ad"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547638583529"
+    }
+  },
+  "code": "445d75513550336dafed71b217854f73",
+  "enabled": true,
+  "title": "Test Email Verification 3",
+  "content": "Rédigez votre annonce en respectant les consignes ssuivantes : L'annonce doit décrire le poste, le profil du candidat recherché Vous pouvez placer vos coordonnées à l'intérieur de l'annonce. Nous validons les annonces, en cas de non conformité nous vous alerterons par email. Une fois l'annonce rédigé vous recevrez un email pour valider l'annonce. Vous pouvez choisir de cacher vos coordonnées totalement dans ce cas, vous recevrez des candidatures via notre site. Vous pouvez choisir de dévoiler vos coordonnées au candidats d'une de vos annonces, dans ce cas le candidats reçois par email vos coordonées. Enfin vous être libre de placer vos coordonnées dans l'annonce. ",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Marrakech",
+  "domain": "Industrie",
+  "experienceLevel": "De 3 à 5 ans",
+  "formation": "Bac +4",
+  "nbrDePostes": 4,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new_verified",
+  "stateRank": 1,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547638660689"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c3f4961a544b61da4bb46cf"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547651425701"
+    }
+  },
+  "code": "68f93a94c9b0cb50645afdfe6d3dda7c",
+  "enabled": true,
+  "title": "test de verification 4",
+  "content": "Rédigez votre annonce en respectant les consignes ssuivantes : L'annonce doit décrire le poste, le profil du candidat recherché Vous pouvez placer vos coordonnées à l'intérieur de l'annonce. Nous validons les annonces, en cas de non conformité nous vous alerterons par email. Une fois l'annonce rédigé vous recevrez un email pour valider l'annonce. Vous pouvez choisir de cacher vos coordonnées totalement dans ce cas, vous recevrez des candidatures via notre site. Vous pouvez choisir de dévoiler vos coordonnées au candidats d'une de vos annonces, dans ce cas le candidats reçois par email vos coordonées. Enfin vous être libre de placer vos coordonnées dans l'annonce. ",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps partiel",
+  "phone": "0661623948",
+  "city": "Berrechid",
+  "domain": "Immobilier",
+  "experienceLevel": "De 1 à 3 ans",
+  "formation": "Bac +4",
+  "nbrDePostes": 4,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new_verified",
+  "stateRank": 1,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547651488766"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c3f4d07a544b63a10a8aa40"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547652359213"
+    }
+  },
+  "code": "145c239574f370683bf273f641d2f284",
+  "enabled": true,
+  "title": "Test Email Verification 3 (modifier)",
+  "content": "Rédigez votre annonce en respectant les consignes ssuivantes : L'annonce doit décrire le poste, le profil du candidat recherché Vous pouvez placer vos coordonnées à l'intérieur de l'annonce. Nous validons les annonces, en cas de non conformité nous vous alerterons par email. Une fois l'annonce rédigé vous recevrez un email pour valider l'annonce. Vous pouvez choisir de cacher vos coordonnées totalement dans ce cas, vous recevrez des candidatures via notre site. Vous pouvez choisir de dévoiler vos coordonnées au candidats d'une de vos annonces, dans ce cas le candidats reçois par email vos coordonées. Enfin vous être libre de placer vos coordonnées dans l'annonce. ",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Marrakech",
+  "domain": "Industrie",
+  "nbrDePostes": 4,
+  "confidentiality": "Mes coordonnées sont publiques",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "updated",
+  "stateRank": 2,
+  "oldKey": "5c3f1737a544b63394f632ad"
+},{
+  "_id": {
+    "$oid": "5c3f7433a544b6241494562e"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547662387587"
+    }
+  },
+  "code": "2c896e494a7d91421388fd0bfa4ecd55",
+  "enabled": true,
+  "title": "Annonce valide",
+  "content": "Annonce valide",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps partiel",
+  "phone": "0661623948",
+  "city": "Rabat",
+  "domain": "Assurance",
+  "nbrDePostes": 4,
+  "confidentiality": "Mes coordonnées sont publiques",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "valid",
+  "stateRank": 3,
+  "oldKey": "5c3f73e4a544b6241494562d",
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547662807664"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c3f767ca544b62414945630"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547662972541"
+    }
+  },
+  "code": "df472d5f95f904cee1461483c2fda2c1",
+  "enabled": true,
+  "title": "Annonce valide 2",
+  "content": "test le 16/01/2019 19:22",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps partiel",
+  "phone": "0661623948",
+  "city": "Ouarzazate",
+  "domain": "Agriculture",
+  "experienceLevel": "Niveau d'expérience requis",
+  "formation": "Niveau d'étude requis",
+  "nbrDePostes": 1,
+  "confidentiality": "Mes coordonnées sont publiques",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "disabled",
+  "stateRank": 4,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547663197797"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c41db6ea544b6345c0cf8f2"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1547819886820"
+    }
+  },
+  "code": "5a9b822d09f4fffbf24eeada16aa8e78",
+  "enabled": true,
+  "title": "Test Annonce ",
+  "content": "Test Annonce ",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "Stage",
+  "phone": "0661623948",
+  "city": "Berkane",
+  "domain": "Immobilier",
+  "experienceLevel": "Moins de 1 an",
+  "formation": "Bac +5 et plus",
+  "nbrDePostes": 5,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new_verified",
+  "stateRank": 1,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1547821659196"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c458879a544b634489a334c"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548060793599"
+    }
+  },
+  "code": "b8e4b7f1815f1dcfa9cdb3a4cec7a1c5",
+  "enabled": true,
+  "title": "jobMaroc offre",
+  "content": "jobMaroc offre",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps partiel",
+  "phone": "0661623948",
+  "city": "Berkane",
+  "domain": "Telecommunication",
+  "experienceLevel": "Débutant",
+  "formation": "Bac +5 et plus",
+  "nbrDePostes": 5,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c4593c5a544b61d90a7ab2a"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548063685600"
+    }
+  },
+  "code": "d68de94591fe6841944d32982cec6dd0",
+  "enabled": true,
+  "title": "Test Job maroc i18n",
+  "content": "Test Job maroc i18n",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps partiel",
+  "phone": "0661623948",
+  "city": "Al hoceima",
+  "domain": "Banque/Finances",
+  "experienceLevel": "Débutant",
+  "formation": "Bac +5 et plus",
+  "nbrDePostes": 4,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new_verified",
+  "stateRank": 1,
+  "updateDate": {
+    "$date": {
+      "$numberLong": "1548063717038"
+    }
+  }
+},{
+  "_id": {
+    "$oid": "5c45cc60a544b61c2cad471b"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548078176662"
+    }
+  },
+  "code": "fd43070c6e3a631fbeba6d3a83cc68fa",
+  "enabled": true,
+  "title": "test image upload",
+  "img": "IMG-1548078177203.jpg",
+  "content": "test image upload",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Aoussered",
+  "domain": "Relations Publiques",
+  "experienceLevel": "De 1 à 3 ans",
+  "formation": "Bac +5 et plus",
+  "nbrDePostes": 3,
+  "confidentiality": "Mes coordonnées sont publiques",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45d43ba544b60ae4fb2ed0"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548080187705"
+    }
+  },
+  "code": "0a7b660e7b9a7b256e5286598c5ee104",
+  "enabled": true,
+  "title": "test image upload",
+  "content": "test image upload",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Bouznika",
+  "domain": "Banque/Finances",
+  "experienceLevel": "Moins de 1 an",
+  "formation": "Bac +4",
+  "nbrDePostes": 3,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45d696a544b60ae480d7b0"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548080790337"
+    }
+  },
+  "code": "2f613c5756cf26696b9933c7d0233e11",
+  "enabled": true,
+  "title": "test image upload",
+  "content": "test image upload",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Bouznika",
+  "domain": "Banque/Finances",
+  "experienceLevel": "Moins de 1 an",
+  "formation": "Bac +4",
+  "nbrDePostes": 3,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45d72ea544b623e461244f"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548080942004"
+    }
+  },
+  "code": "88767ece4045e1496995258254155599",
+  "enabled": true,
+  "title": "test image upload 2",
+  "content": "test image upload 2",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Bouznika",
+  "domain": "Banque/Finances",
+  "experienceLevel": "Moins de 1 an",
+  "formation": "Bac +4",
+  "nbrDePostes": 3,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45d799a544b623e4612450"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548081049441"
+    }
+  },
+  "code": "b97e8f44d9a3ae1e8e7c4ec3836ff9ef",
+  "enabled": true,
+  "title": "test image upload 2",
+  "img": "IMG-1548081049566.jpg",
+  "content": "test image upload 2",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Bouznika",
+  "domain": "Banque/Finances",
+  "experienceLevel": "Moins de 1 an",
+  "formation": "Bac +4",
+  "nbrDePostes": 3,
+  "confidentiality": "Mes coordonnées sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45e627a544b614946e2ea4"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548084775666"
+    }
+  },
+  "code": "f9b0bc48b128081e54fb6d0a9682b642",
+  "enabled": true,
+  "title": "test image upload 33",
+  "img": "IMG-1548084776223.jpg",
+  "content": "test image upload 33",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "Freelance",
+  "phone": "0661623948",
+  "city": "Beni mellal",
+  "domain": "Agriculture",
+  "experienceLevel": "De 3 Ã  5 ans",
+  "formation": "Bac +2",
+  "nbrDePostes": 5,
+  "confidentiality": "Mes coordonnÃ©es sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45e717a544b619f05e3c0e"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548085015142"
+    }
+  },
+  "code": "7112b1c8295346f7055c79af95289670",
+  "enabled": true,
+  "title": "test image upload 44",
+  "img": "IMG-1548085015693.jpg",
+  "content": "test image upload 44",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "Freelance",
+  "phone": "0661623948",
+  "city": "Beni mellal",
+  "domain": "Agriculture",
+  "experienceLevel": "De 3 Ã  5 ans",
+  "formation": "Bac +2",
+  "nbrDePostes": 5,
+  "confidentiality": "Mes coordonnÃ©es sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45e7e7a544b619f00a2445"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548085223486"
+    }
+  },
+  "code": "3b5fe580f8a36060bc36c8e79a6bf513",
+  "enabled": true,
+  "title": "test image upload 55",
+  "img": "IMG-1548085223620.jpg",
+  "content": "test image upload 55",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "Freelance",
+  "phone": "0661623948",
+  "city": "Beni mellal",
+  "domain": "Agriculture",
+  "experienceLevel": "De 3 Ã  5 ans",
+  "formation": "Bac +2",
+  "nbrDePostes": 5,
+  "confidentiality": "Mes coordonnÃ©es sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45e848a544b619f06756ec"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548085320054"
+    }
+  },
+  "code": "82ffcc59b764c448ef178a171908dc1f",
+  "enabled": true,
+  "title": "test image upload 66",
+  "img": "IMG-1548085320274.jpg",
+  "content": "test image upload 66",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "Freelance",
+  "phone": "0661623948",
+  "city": "Beni mellal",
+  "domain": "Agriculture",
+  "experienceLevel": "De 3 Ã  5 ans",
+  "formation": "Bac +2",
+  "nbrDePostes": 5,
+  "confidentiality": "Mes coordonnÃ©es sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45e9c4a544b619f0fc21d3"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548085700690"
+    }
+  },
+  "code": "3e20f2c2c22a4fac20090a4f78559be1",
+  "enabled": true,
+  "title": "test image upload 77",
+  "img": "IMG-1548085700918.jpg",
+  "content": "test image upload 77",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDD",
+  "phone": "0661623948",
+  "city": "Chafchaouen",
+  "domain": "Publication/Impression",
+  "experienceLevel": "De 3 Ã  5 ans",
+  "formation": "Bac +4",
+  "nbrDePostes": 1,
+  "confidentiality": "Mes coordonnÃ©es sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45eb87a544b619f0fe9a56"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548086151693"
+    }
+  },
+  "code": "142fb06f0bc125cb10bdf91e894e2fa7",
+  "enabled": true,
+  "title": "test image upload 77",
+  "img": "IMG-1548086151818.jpg",
+  "content": "test image upload 77",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDD",
+  "phone": "0661623948",
+  "city": "Chafchaouen",
+  "domain": "Publication/Impression",
+  "experienceLevel": "De 3 Ã  5 ans",
+  "formation": "Bac +4",
+  "nbrDePostes": 1,
+  "confidentiality": "Mes coordonnÃ©es sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45ee05a544b619f0f3ac9d"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548086789428"
+    }
+  },
+  "code": "3b8d72c412c19671275196462c757b09",
+  "enabled": true,
+  "title": "test image upload 88",
+  "img": "IMG-1548086789606.jpg",
+  "content": "test image upload 88",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "CDI - Temps complet",
+  "phone": "0661623948",
+  "city": "Berkane",
+  "domain": "Relations Publiques",
+  "experienceLevel": "De 1 Ã  3 ans",
+  "formation": "Bac +2",
+  "nbrDePostes": 5,
+  "confidentiality": "Mes coordonnÃ©es sont transmises aux candidats",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+},{
+  "_id": {
+    "$oid": "5c45f96da544b61e940970ad"
+  },
+  "creationDate": {
+    "$date": {
+      "$numberLong": "1548089709895"
+    }
+  },
+  "code": "52706ca93d4ef56381fed4e4d6ec946f",
+  "enabled": true,
+  "title": "test image resizing",
+  "img": "IMG-1548089710501.jpg",
+  "content": "test image resizing",
+  "email": "omar.manioui@icloud.com",
+  "secretCode": "cfa68ef43fa906ae1e838f4237921517",
+  "type": "Stage",
+  "phone": "0661623948",
+  "city": "Bouskoura",
+  "domain": "Banque/Finances",
+  "experienceLevel": "De 1 Ã  3 ans",
+  "formation": "Bac +4",
+  "nbrDePostes": 2,
+  "confidentiality": "Mes coordonnÃ©es sont publiques",
+  "companyName": "RT System",
+  "companyCode": "12345",
+  "state": "new",
+  "stateRank": 2
+}]

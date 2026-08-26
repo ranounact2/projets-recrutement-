@@ -1,0 +1,249 @@
+header {
+    position: absolute;
+    z-index: 2;
+    display: inline-flex;
+}
+.current-page{
+    background-color: #F9AB00
+}
+.heading span img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+.div2 img {
+          width: 16px;
+          height: 16px;
+          object-fit: contain;
+          margin-right: 5px;
+      }
+section.offres {
+    margin: 1rem auto;
+    overflow-x: hidden;
+    width: 80%;
+    padding: 0;
+    margin-bottom: 45px;
+}
+span.badge.success {
+    color: green;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    border-radius: 30px;
+    border: 1px solid green;
+    padding: 0.2rem 1rem;
+    float: left;
+    margin-top: 0.8rem;
+}
+section.offres>h2 {
+    color: #000;
+    font-size: 40px;
+    font-family: Roboto;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 4rem;
+}
+
+.slide .item .heading>img {
+    width: 67px;
+    border-radius: 50%;
+}
+
+.heading {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+.heading h2 {
+    color: #000;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+img.save
+ {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+.slide {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1%;
+    width: 100%;
+    transition-duration: 2s;
+    justify-content: center;
+}
+
+.item {
+    position: relative;
+    border-radius: 7px;
+    border: 2px solid #ECEDF2;
+    padding: 2rem;
+    float: left;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 33%;
+    flex: 0 0 75%;
+}
+.heading span {
+    color: #696969;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+.heading span img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    margin-right: 5px;
+}
+span.badge.danger {
+    color: #F00;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    border-radius: 30px;
+    border: 1px solid #F00;
+    padding: 0.2rem 1rem;
+    float: left;
+    margin-top: 0.8rem;
+}
+
+span.orange
+ {
+    color: #696969;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    float: right;
+    margin-top: 1rem;
+}
+
+/* responsive offres */
+
+
+@media(max-width:600px){
+    section.offres>h2 {
+        font-size: 30px;
+    }
+    header.relative {
+        position: relative;
+    }
+    .item {
+        flex: 0 100%;
+    }
+    .offre {
+        display: block;
+        text-align: center;
+    }
+    .offre span.badge {
+        margin: 0 auto;
+        float: none;
+    }
+}
+header div ul li a {
+     color: #7b8b8e;
+ }
+ button.btn-white {
+     border: 1px solid #e5e5e5;
+     color: #7b8b8e;
+ }
+ a.btn , .jobmaroc-btn-validate, .jobmaroc-btn-delete{
+     padding: 8px 25px;
+     color: #fff;
+     border: none;
+     border-radius: 50px;
+     background: #F9AB00;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     margin-top: 50px;
+     font-size: 14px;
+     text-align: center;
+     float: right;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+ a.btn , .jobmaroc-btn-validate, .jobmaroc-btn-delete, .jobmaroc-btn-disabled{
+     text-decoration:none;
+     padding: 8px 25px;
+     color: #fff;
+     border: none;
+     border-radius: 50px;
+     background: #F9AB00;
+     cursor: pointer;
+     transition: background-color 0.3s;
+     margin-top: 15px;
+     font-size: 14px;
+     text-align: center;
+     float: right;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ }
+
+ .cl1{
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: end;
+     gap: 10px;
+     float: right;
+ }
+ .btn-group {
+     display: flex;
+     gap: 5px;
+     flex-wrap: wrap;
+ }
+ a.btn.btn-danger {
+     background: #dc3545;
+     color: #fff;
+ }
+ a.btn.btn-danger:hover {
+     background: #c82333;
+ }
+ .pagination{
+    padding: 10px;
+    display: flex;
+    gap: 11px;
+    justify-content: center;
+    align-items: center;
+ }
+.pagination a{
+    text-decoration: none;
+    color: #000;
+}
+.pagination span{
+    border: 1px solid;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+/* Back-office index only (body.page-bo-index) */
+.page-bo-index .bo-status-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+}
+.page-bo-index .bo-status-filter a {
+    padding: 0.35rem 0.75rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    color: #333;
+    text-decoration: none;
+}
+.page-bo-index .bo-status-filter a:hover {
+    border-color: #f9ab00;
+    color: #10195d;
+}
+.page-bo-index .bo-status-filter a.is-active {
+    background: #f9ab00;
+    border-color: #f9ab00;
+    color: #111;
+    font-weight: 500;
+}

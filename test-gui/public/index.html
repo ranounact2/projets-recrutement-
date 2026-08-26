@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playwright Automation Platform — Console d'Exécution Enterprise</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Top Enterprise Navigation Header -->
+  <header class="app-header">
+    <div class="header-container">
+      
+      <div class="brand">
+        <!-- Official Playwright Brand SVG Logo -->
+        <div class="brand-logo">
+          <svg width="32" height="32" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M135 170C135 150.67 150.67 135 170 135H330C349.33 135 365 150.67 365 170V330C365 349.33 349.33 365 330 365H170C150.67 365 135 349.33 135 330V170Z" fill="#2E6495"/>
+            <path d="M190 205C190 191.19 201.19 180 215 180H285C298.81 180 310 191.19 310 205V275C310 288.81 298.81 300 285 300H215C201.19 300 190 288.81 190 275V205Z" fill="#45BA4B"/>
+            <circle cx="250" cy="240" r="25" fill="#FFFFFF"/>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <div class="brand-title-row">
+            <h1>Playwright Test Platform</h1>
+            <span class="env-badge">ENTERPRISE EDITION</span>
+          </div>
+          <p class="brand-subtitle">Console d'Exécution & Monitoring des Tests — Module Recherche</p>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <div class="os-indicator" id="osBadge">
+          <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <span id="osText">Cross-Platform (macOS / Windows)</span>
+        </div>
+        <div class="connection-status" id="connStatus">
+          <span class="status-dot"></span>
+          <span class="status-label">Serveur Actif</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main class="app-main">
+
+    <!-- KPI Metric Cards Grid -->
+    <section class="metrics-grid">
+      
+      <div class="metric-card">
+        <div class="metric-header">
+          <span class="metric-title">Total des Tests</span>
+          <div class="metric-icon icon-neutral">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="m9 15 2 2 4-4"/></svg>
+          </div>
+        </div>
+        <div class="metric-body">
+          <span class="metric-value" id="valTotal">0</span>
+          <span class="metric-subtext" id="valTotalSub">Aucune exécution</span>
+        </div>
+      </div>
+
+      <div class="metric-card metric-pass">
+        <div class="metric-header">
+          <span class="metric-title">Tests Réussis</span>
+          <div class="metric-icon icon-success">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+        </div>
+        <div class="metric-body">
+          <span class="metric-value text-success" id="valPassed">0</span>
+          <span class="metric-subtext text-success" id="valPassedSub">0% du total</span>
+        </div>
+      </div>
+
+      <div class="metric-card metric-fail">
+        <div class="metric-header">
+          <span class="metric-title">Tests Échoués</span>
+          <div class="metric-icon icon-danger">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          </div>
+        </div>
+        <div class="metric-body">
+          <span class="metric-value text-danger" id="valFailed">0</span>
+          <span class="metric-subtext text-danger" id="valFailedSub">0% d'échecs</span>
+        </div>
+      </div>
+
+      <div class="metric-card metric-skip">
+        <div class="metric-header">
+          <span class="metric-title">Tests Ignorés</span>
+          <div class="metric-icon icon-warning">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+        </div>
+        <div class="metric-body">
+          <span class="metric-value text-warning" id="valSkipped">0</span>
+          <span class="metric-subtext" id="valSkippedSub">En attente</span>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-header">
+          <span class="metric-title">Taux de Conformation</span>
+          <div class="metric-icon icon-brand">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+        </div>
+        <div class="metric-body">
+          <span class="metric-value text-brand" id="valRate">0%</span>
+          <span class="metric-subtext" id="valRateSub">Score global</span>
+        </div>
+      </div>
+
+      <div class="metric-card">
+        <div class="metric-header">
+          <span class="metric-title">Temps d'Exécution</span>
+          <div class="metric-icon icon-neutral">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+        </div>
+        <div class="metric-body">
+          <span class="metric-value" id="valDuration">0.0s</span>
+          <span class="metric-subtext" id="valLastTime">Jamais exécuté</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Action Toolbar Card -->
+    <section class="card controls-card">
+      <div class="controls-top">
+        <div>
+          <h2 class="section-title">Centre d'Action et de Lancement</h2>
+          <p class="section-desc">Lancez les suites de tests automatisés d'un simple clic sans utiliser le terminal.</p>
+        </div>
+      </div>
+
+      <div class="action-buttons-group">
+        <button class="btn btn-primary" id="btnRunAll">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          <span>Lancer Tous les Tests</span>
+        </button>
+
+        <button class="btn btn-secondary" id="btnRunHeaded">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          <span>Mode Démo (Navigateur Visible)</span>
+        </button>
+
+        <button class="btn btn-secondary" id="btnRunSearch">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Tester Module Recherche</span>
+        </button>
+
+        <button class="btn btn-outline" id="btnRunUI">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          <span>Mode Playwright UI</span>
+        </button>
+
+        <button class="btn btn-report" id="btnOpenReport">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          <span>Rapport HTML</span>
+        </button>
+
+        <button class="btn btn-trace" id="btnOpenTrace">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          <span>Viewer de Traces</span>
+        </button>
+
+        <button class="btn btn-danger" id="btnStop" disabled>
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          <span>Arrêter</span>
+        </button>
+      </div>
+
+      <!-- Execution Progress Bar -->
+      <div class="progress-wrapper" id="progressWrapper">
+        <div class="progress-header">
+          <span class="progress-status" id="progressText">Prêt pour l'exécution des tests</span>
+          <span class="progress-pill" id="progressPercent">0%</span>
+        </div>
+        <div class="progress-track">
+          <div class="progress-bar" id="progressFill"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs Card -->
+    <section class="card main-card">
+      <div class="tab-navigation">
+        <button class="tab-item active" data-tab="tabResults">
+          <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/></svg>
+          <span>Résultats Réels des Tests</span>
+        </button>
+
+        <button class="tab-item" data-tab="tabLogs">
+          <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+          <span>Console & Logs en Direct</span>
+        </button>
+
+        <button class="tab-item" data-tab="tabEmbedReport">
+          <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span>Rapport HTML Intégré</span>
+        </button>
+
+        <button class="tab-item" data-tab="tabTraces">
+          <svg class="tab-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          <span>Explorer les Traces (.zip)</span>
+        </button>
+      </div>
+
+      <div class="tab-content">
+
+        <!-- Tab 1: Real Results Table -->
+        <div class="tab-panel active" id="tabResults">
+          <div class="table-actions-bar">
+            <div class="search-box">
+              <svg class="search-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="text" id="searchFilter" placeholder="Filtrer les tests par nom ou fichier..." class="search-input">
+            </div>
+
+            <div class="filter-group">
+              <button class="filter-btn active" data-filter="all">Tous</button>
+              <button class="filter-btn btn-pass-filter" data-filter="passed">Réussis</button>
+              <button class="filter-btn btn-fail-filter" data-filter="failed">Échoués</button>
+              <button class="filter-btn btn-skip-filter" data-filter="skipped">Ignorés</button>
+            </div>
+          </div>
+
+          <div class="table-responsive">
+            <table class="enterprise-table">
+              <thead>
+                <tr>
+                  <th style="width: 130px;">Statut</th>
+                  <th>Nom du Cas de Test</th>
+                  <th>Fichier / Suite</th>
+                  <th style="width: 110px;">Durée</th>
+                  <th style="width: 220px; text-align: right;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="testTableBody">
+                <tr>
+                  <td colspan="5" class="empty-state-cell">
+                    <div class="empty-state-box">
+                      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#94a3b8" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                      <p class="empty-title">Aucune donnée d'exécution enregistrée</p>
+                      <p class="empty-desc">Cliquez sur <strong>"Lancer Tous les Tests"</strong> ci-dessus pour effectuer un premier test réel.</p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: Live Console Terminal -->
+        <div class="tab-panel" id="tabLogs">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+              <span class="terminal-path">playwright-runner --output=stdout</span>
+            </div>
+            <div class="terminal-controls">
+              <label class="toggle-label">
+                <input type="checkbox" id="chkAutoScroll" checked>
+                <span>Défilement Automatique</span>
+              </label>
+              <button class="btn-terminal-clear" id="btnClearLogs">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                <span>Effacer</span>
+              </button>
+            </div>
+          </div>
+          <div class="terminal-body" id="terminalView">
+            <div class="log-row log-sys">[SYSTEM] Console prête. En attente du premier lancement de test...</div>
+          </div>
+        </div>
+
+        <!-- Tab 3: Embedded Report -->
+        <div class="tab-panel" id="tabEmbedReport">
+          <div class="report-frame-wrapper">
+            <iframe id="reportFrame" src="/report/index.html" title="Playwright HTML Report"></iframe>
+          </div>
+        </div>
+
+        <!-- Tab 4: Trace Files -->
+        <div class="tab-panel" id="tabTraces">
+          <div class="traces-top-bar">
+            <div>
+              <h3 class="traces-title">Fichiers de Traces Playwright (.zip)</h3>
+              <p class="traces-desc">Les traces contiennent les enregistrements pas à pas, captures d'écran et snapshots du DOM.</p>
+            </div>
+            <button class="btn btn-outline" id="btnOpenFolder">
+              <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+              <span>Ouvrir Dossier système</span>
+            </button>
+          </div>
+
+          <div class="traces-grid" id="tracesList">
+            <div class="empty-state-box">
+              <p class="empty-title">Recherche des fichiers de traces...</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Error Detail Modal -->
+  <div class="modal-overlay" id="errorModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <div class="modal-icon-danger">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 id="modalTitle">Détails de l'échec</h3>
+        </div>
+        <button class="modal-close" id="closeModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <label class="modal-label">Stack Trace & Journal d'Erreur :</label>
+        <pre class="error-console" id="modalErrorStack"></pre>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-trace" id="modalOpenTraceBtn">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          <span>Ouvrir dans Playwright Trace Viewer</span>
+        </button>
+        <button class="btn btn-secondary" id="modalCloseBtn">Fermer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

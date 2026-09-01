@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  mongo1:
+    image: mongo:7.0
+    command: ["--replSet", "rs0", "--bind_ip_all", "--port", "27017"]
+    ports:
+      - 27017:27017
+    healthcheck:
+      test: ["CMD", "mongosh", "--port", "27017", "--quiet", "--eval", "try { rs.initiate(); } catch(e) {} try { db.getSiblingDB('transactionlogdb').createCollection('log'); } catch(e) {} rs.status().ok ? quit(0) : quit(1)"]
+      interval: 10s
+      start_period: 30s
+      timeout: 10s
+      retries: 5
+
+  app:
+    image: maven:3.9-eclipse-temurin-17
+    volumes:
+      - .:/usr/src/app
+      - maven-repo:/root/.m2
+    working_dir: /usr/src/app
+    ports:
+      - 8080:8080
+    environment:
+      - EM_MONGO_URI=mongodb://mongo1:27017/?replicaSet=rs0
+    depends_on:
+      mongo1:
+        condition: service_healthy
+    command: >
+      bash -c "mvn compile exec:java -Dexec.mainClass=com.centoria.jobmaroc.web.Main"
+
+  test:
+    image: maven:3.9-eclipse-temurin-17
+    volumes:
+      - .:/usr/src/app
+      - maven-repo:/root/.m2
+    working_dir: /usr/src/app
+    environment:
+      - EM_MONGO_URI=mongodb://mongo1:27017/?replicaSet=rs0
+    depends_on:
+      mongo1:
+        condition: service_healthy
+    command: >
+      bash -c "mvn -B test"
+
+volumes:
+  maven-repo:

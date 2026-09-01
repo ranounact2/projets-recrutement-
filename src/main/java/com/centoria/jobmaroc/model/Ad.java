@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.time.Instant;
+import java.util.List;
+
 @Getter
 @Setter
 public class Ad extends AbstractModel {
@@ -76,6 +78,12 @@ public class Ad extends AbstractModel {
     private String twitter;
     private String linkedin;
     private int stateRank;
+
+    /** Vector embedding for semantic search */
+    private List<Double> embedding;
+
+    /** Score de matching sémantique (non persisté, utilisé uniquement pour les résultats de recherche) */
+    private Double matchScore;
 
     private int announcetype = ANNOUNCE_TYPE_NORMAL;//this is the default
 

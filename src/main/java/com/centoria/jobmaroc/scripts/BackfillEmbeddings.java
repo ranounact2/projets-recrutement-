@@ -2,6 +2,7 @@ package com.centoria.jobmaroc.scripts;
 
 import com.centoria.jobmaroc.dao.mongodb.MongoDBManagerFactory;
 import com.centoria.jobmaroc.model.Ad;
+import com.centoria.jobmaroc.service.IAdService;
 import com.centoria.jobmaroc.service.impl.AdService;
 import lombok.extern.slf4j.Slf4j;
 
@@ -18,7 +19,7 @@ public class BackfillEmbeddings {
             MongoDBManagerFactory.getInstance();
             log.info("MongoDB connection established.");
 
-            AdService adService = new AdService();
+            IAdService adService = AdService.getInstance();
 
             // Fetch all ads (we might need a custom query to get ALL including non-valid ones, 
             // but getAllAds usually gets a batch. Let's write a simple loop or use direct DAO)

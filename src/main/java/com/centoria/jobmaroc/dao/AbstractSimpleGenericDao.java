@@ -176,6 +176,30 @@ public abstract class AbstractSimpleGenericDao<T extends AbstractModel> implemen
         return resultList;
     }
 
+    @Override
+    public List<T> aggregate(List<String> pipelineStagesJson) {
+        List<T> resultList = new ArrayList<>();
+        try {
+            T classObj = targetClass.getDeclaredConstructor().newInstance();
+            String collectionName = classObj.getCollectionName();
+            MongoCollection<T> collection = MongoDBManagerFactory.getInstance().getManager().getDatabase().getCollection(collectionName, targetClass);
+
+            List<Document> pipeline = new ArrayList<>();
+            for (String stageJson : pipelineStagesJson) {
+                pipeline.add(Document.parse(stageJson));
+            }
+
+            AggregateIterable<T> iterable = collection.aggregate(pipeline, targetClass);
+            for (T document : iterable) {
+                resultList.add(document);
+            }
+        } catch (Exception e) {
+            log.error("Error executing aggregate pipeline", e);
+            throw new TechnicalException("Error executing aggregate pipeline", e.getMessage());
+        }
+        return resultList;
+    }
+
     protected List<org.bson.Document> jsonQueryToPipeline(String jsonPipeline) {
         List<org.bson.Document> pipeline = new ArrayList<>();
         StringBuilder currentStage = new StringBuilder();

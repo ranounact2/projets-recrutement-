@@ -73,4 +73,6 @@ public class AdDto {
 
     private int announcetype;//this is the defaul
     private long totalAds;
+
+    private Double matchScore; // Percentage representation of match (e.g. 0.85 = 85%)
 }

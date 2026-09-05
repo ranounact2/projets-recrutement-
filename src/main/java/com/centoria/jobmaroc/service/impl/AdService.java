@@ -18,7 +18,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.regex.Pattern;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public class AdService extends BaseService<Ad, IAdDao> implements IAdService {
 
     /** Tri BO « Toutes » : dernière activité ; secours si {@code lastActivityAt} absent. */
@@ -60,6 +62,24 @@ public class AdService extends BaseService<Ad, IAdDao> implements IAdService {
             obj.setCreationDate(now);
         }
         obj.setLastActivityAt(now);
+
+        // Generate vector embedding for semantic search
+        try {
+            String contentToEmbed = String.format("%s %s %s %s", 
+                obj.getTitle() != null ? obj.getTitle() : "",
+                obj.getContent() != null ? obj.getContent().replaceAll("<[^>]*>", "") : "", // strip HTML
+                obj.getDomain() != null ? obj.getDomain() : "",
+                obj.getCity() != null ? obj.getCity() : ""
+            ).trim();
+            
+            if (!contentToEmbed.isEmpty()) {
+                com.centoria.jobmaroc.service.IAiService aiService = com.centoria.jobmaroc.service.impl.AiService.getInstance();
+                obj.setEmbedding(aiService.generateEmbedding(contentToEmbed));
+            }
+        } catch (Exception e) {
+            log.error("Failed to generate embedding for Ad", e);
+        }
+
         super.addOrUpdate(obj);
     }
 
@@ -416,8 +436,48 @@ public class AdService extends BaseService<Ad, IAdDao> implements IAdService {
         if (cityName == null || cityName.isEmpty()) {
             return Collections.emptyList();
         }
+
+        if (keyword != null && !keyword.trim().isEmpty()) {
+            try {
+                // 1. Generate embedding for keyword
+                com.centoria.jobmaroc.service.IAiService aiService = com.centoria.jobmaroc.service.impl.AiService.getInstance();
+                List<Double> queryEmbedding = aiService.generateEmbedding(keyword);
+                
+                StringBuilder arrayStr = new StringBuilder("[");
+                for (int i = 0; i < queryEmbedding.size(); i++) {
+                    arrayStr.append(queryEmbedding.get(i));
+                    if (i < queryEmbedding.size() - 1) arrayStr.append(",");
+                }
+                arrayStr.append("]");
+
+                List<String> pipeline = new ArrayList<>();
+                pipeline.add("{\"$vectorSearch\": {\"index\": \"vector_index\", \"path\": \"embedding\", \"queryVector\": " + arrayStr.toString() + ", \"numCandidates\": 100, \"limit\": " + (numberOfAds * 3) + "}}");
+                pipeline.add("{\"$set\": {\"matchScore\": { \"$meta\": \"vectorSearchScore\" }}}");
+
+                // Match conditions
+                Document matchDoc = new Document();
+                matchDoc.append("state", Ad.VALID);
+                matchDoc.append("enabled", true);
+                if (domainName != null && !domainName.isEmpty()) matchDoc.append("domain", domainName);
+                if (cityName != null && !cityName.isEmpty()) matchDoc.append("city", cityName);
+                
+                pipeline.add("{\"$match\": " + matchDoc.toJson() + "}");
+                
+                int skip = (pageNumber - 1) * numberOfAds;
+                pipeline.add("{\"$skip\": " + skip + "}");
+                pipeline.add("{\"$limit\": " + numberOfAds + "}");
+
+                List<Ad> ads = dao.aggregate(pipeline);
+                return mapperAdDto.asDtos(ads);
+            } catch (Exception e) {
+                log.error("Vector search failed, falling back to standard search", e);
+            }
+        }
+
         String query = buildQuery(cityName, domainName, keyword);
-        List<Ad> ads = get(query, null, "{creationDate: -1}", pageNumber, numberOfAds);
+        String sort = BO_LISTING_SORT_ALL;
+
+        List<Ad> ads = get(query, null, sort, pageNumber, numberOfAds);
         return mapperAdDto.asDtos(ads);
     }
 
@@ -456,6 +516,72 @@ public class AdService extends BaseService<Ad, IAdDao> implements IAdService {
         String query = "{$text:{$search:\"" + keyword + "\"}}";
         List<Ad> ads = get(query, null, null, pageNumber, numberOfAds);
         return mapperAdDto.asDtos(ads);
+    }
+
+    @Override
+    public List<AdDto> getSemanticAdsByQuery(String query, int pageNumber, int numberOfAds) {
+        try {
+            // 1. Generate embedding for query
+            com.centoria.jobmaroc.service.IAiService aiService = com.centoria.jobmaroc.service.impl.AiService.getInstance();
+            List<Double> queryEmbedding = aiService.generateEmbedding(query);
+            
+            // Format array to JSON string for mongo query
+            StringBuilder arrayStr = new StringBuilder("[");
+            for (int i = 0; i < queryEmbedding.size(); i++) {
+                arrayStr.append(queryEmbedding.get(i));
+                if (i < queryEmbedding.size() - 1) {
+                    arrayStr.append(",");
+                }
+            }
+            arrayStr.append("]");
+
+            // 2. Build aggregation pipeline
+            List<String> pipeline = new ArrayList<>();
+            
+            // Stage 1: vector search
+            String vectorSearch = "{" +
+                "\"$vectorSearch\": {" +
+                    "\"index\": \"vector_index\"," +
+                    "\"path\": \"embedding\"," +
+                    "\"queryVector\": " + arrayStr.toString() + "," +
+                    "\"numCandidates\": 100," +
+                    "\"limit\": " + (numberOfAds * 2) + // over-fetch slightly for filtering
+                "}" +
+            "}";
+            pipeline.add(vectorSearch);
+
+            // Stage 2: project score
+            String setScore = "{" +
+                "\"$set\": {" +
+                    "\"matchScore\": { \"$meta\": \"vectorSearchScore\" }" +
+                "}" +
+            "}";
+            pipeline.add(setScore);
+
+            // Stage 3: match only valid/enabled ads
+            String match = "{" +
+                "\"$match\": {" +
+                    "\"state\": \"" + Ad.VALID + "\"," +
+                    "\"enabled\": true" +
+                "}" +
+            "}";
+            pipeline.add(match);
+
+            // Stage 4: skip & limit for pagination
+            int skip = (pageNumber - 1) * numberOfAds;
+            pipeline.add("{\"$skip\": " + skip + "}");
+            pipeline.add("{\"$limit\": " + numberOfAds + "}");
+
+            // 3. Execute query
+            List<Ad> ads = dao.aggregate(pipeline);
+            
+            // Map and return
+            return mapperAdDto.asDtos(ads);
+
+        } catch (Exception e) {
+            log.error("Semantic search failed, falling back to keyword search", e);
+            return getAdsByKeyword(query, pageNumber, numberOfAds);
+        }
     }
 
     private String buildQuery(String city, String domain, String keyword) {

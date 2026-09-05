@@ -12,6 +12,8 @@ public interface ISimpleGenericDao<T extends AbstractModel> {
 
 	public List<T> search(String query);
 	
+	public List<T> aggregate(List<String> pipelineStagesJson);
+	
 	public void delete(T obj);
 
 	public void delete(String id);

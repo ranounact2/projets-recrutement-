@@ -80,4 +80,13 @@ public interface IAdService extends IBaseService<Ad> {
 
     List<Ad> getAllAds();
 
+    /**
+     * Effectue une recherche sémantique via MongoDB Vector Search
+     * @param query Texte à rechercher (ex: CV ou requête naturelle)
+     * @param pageNumber Numéro de page
+     * @param numberOfAds Nombre de résultats
+     * @return Liste d'annonces avec score de pertinence
+     */
+    List<AdDto> getSemanticAdsByQuery(String query, int pageNumber, int numberOfAds);
+
 }

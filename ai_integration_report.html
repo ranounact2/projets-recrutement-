@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emplois Maroc - AI Semantic Search Report</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .code-block {
+            background: #2b2b2b;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .alert {
+            padding: 15px;
+            background-color: #e8f4fd;
+            border-left: 5px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .alert-success {
+            background-color: #e8f8f5;
+            border-left-color: #2ecc71;
+        }
+        .alert-warning {
+            background-color: #fcf3cf;
+            border-left-color: #f1c40f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+        .mermaid {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+    <!-- Mermaid.js for Diagrams -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+</head>
+<body>
+
+    <h1>Emplois Maroc: AI Semantic Search & Match Score Report</h1>
+    
+    <div class="alert alert-success">
+        <strong>Status:</strong> Implementation Complete. The application is now equipped with state-of-the-art Vector Search capabilities using MongoDB Atlas and NVIDIA NIM embeddings.
+    </div>
+
+    <div class="card">
+        <h2>1. What's New & What Changed</h2>
+        <p>We transitioned from a strict keyword-based text search to an AI-powered <strong>Semantic Search</strong>. This allows users to find jobs based on the <em>meaning</em> of their query, rather than exact text matches.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Component</th>
+                    <th>What Changed</th>
+                    <th>How & Why</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Domain Models</strong><br><code>Ad.java</code> & <code>Cv.java</code></td>
+                    <td>Added <code>List&lt;Double&gt; embedding</code></td>
+                    <td>Vectors (arrays of floating-point numbers) represent the AI's understanding of the text. Storing these in the DB allows MongoDB to index and search them. Added a non-persisted <code>matchScore</code> to hold query results.</td>
+                </tr>
+                <tr>
+                    <td><strong>Data Transfer Object</strong><br><code>AdDto.java</code></td>
+                    <td>Added <code>Double matchScore</code></td>
+                    <td>Allows the backend to pass the calculated relevance percentage (e.g., 0.95 = 95%) directly to the frontend templates.</td>
+                </tr>
+                <tr>
+                    <td><strong>AI Integration</strong><br><code>IAiService.java</code> & <code>AiService.java</code></td>
+                    <td><strong>NEW FILES</strong></td>
+                    <td>A lightweight HTTP client that connects to the <strong>NVIDIA NIM</strong> endpoint (<code>integrate.api.nvidia.com</code>). It sends raw text and receives a 1024-dimensional vector using the <code>snowflake/arctic-embed-l</code> model.</td>
+                </tr>
+                <tr>
+                    <td><strong>Database Layer</strong><br><code>AbstractSimpleGenericDao.java</code></td>
+                    <td>Added <code>aggregate()</code> method</td>
+                    <td>To perform Vector Search in MongoDB, we must use an Aggregation Pipeline. The previous <code>search()</code> method only supported basic find queries. The new method executes raw JSON pipelines.</td>
+                </tr>
+                <tr>
+                    <td><strong>Service Layer</strong><br><code>AdService.java</code></td>
+                    <td>Updated <code>addOrUpdate()</code> and search queries</td>
+                    <td><strong>On Save:</strong> Automatically combines job Title, Content, Domain, and City, fetches the embedding, and saves it.<br><strong>On Search:</strong> Intercepts keyword queries, generates a vector for the query, and runs a <code>$vectorSearch</code> pipeline. Includes a <strong>Zero-Downtime Fallback</strong> that reverts to standard keyword search if the AI API fails.</td>
+                </tr>
+                <tr>
+                    <td><strong>Frontend UI</strong><br><code>result.ftl</code></td>
+                    <td>Added Match Badge</td>
+                    <td>If a <code>matchScore</code> is present in the DTO, it renders a green badge: <code>⭐ AI Match: 95%</code> next to the job title.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="card">
+        <h2>2. Architecture & Diagrams</h2>
+        
+        <h3>Use Case Diagram</h3>
+        <div class="mermaid">
+            flowchart LR
+                Candidate([Candidate])
+                Employer([Employer])
+                
+                subgraph Emplois Maroc Platform
+                    UC1(Post Job Offer)
+                    UC2(Search Jobs Semantically)
+                    UC3(View AI Match Score)
+                end
+                
+                subgraph External AI NVIDIA NIM
+                    AI1(Generate Text Embedding)
+                end
+                
+                Employer --> UC1
+                UC1 -.->|includes| AI1
+                
+                Candidate --> UC2
+                UC2 -.->|includes| AI1
+                Candidate --> UC3
+        </div>
+
+        <h3>System Sequence Diagram (Semantic Search Flow)</h3>
+        <div class="mermaid">
+            sequenceDiagram
+                autonumber
+                actor User
+                participant Controller as ResultApp
+                participant Service as AdService
+                participant AI as AiService (NVIDIA)
+                participant DB as MongoDB (Atlas)
+                
+                User->>Controller: Search keyword ("Dev backend")
+                Controller->>Service: getAdsWithDomainAndCityByName(..., "Dev backend")
+                
+                alt AI Service Available
+                    Service->>AI: generateEmbedding("Dev backend")
+                    AI-->>Service: Return Vector [0.12, 0.45, ...] (1024 dims)
+                    Service->>DB: aggregate() with $vectorSearch
+                    DB-->>Service: Return Jobs + vectorSearchScore
+                else AI Service Offline / Timeout
+                    Service-xAI: generateEmbedding() fails!
+                    Note over Service,AI: Fallback Triggered
+                    Service->>DB: get() with standard regex/text search
+                    DB-->>Service: Return exact keyword matches
+                end
+                
+                Service-->>Controller: List&lt;AdDto&gt; (with matchScores)
+                Controller-->>User: Render result.ftl with Badges
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>3. Setup Tutorial: API Keys & MongoDB Atlas</h2>
+        
+        <h3>Step 3.1: Getting your NVIDIA NIM API Key</h3>
+        <p>NVIDIA NIM provides access to state-of-the-art embedding models. Here is how to configure them:</p>
+        
+        <ol>
+            <li>Go to <a href="https://build.nvidia.com" target="_blank">build.nvidia.com</a> and log in.</li>
+            <li>Filter the models by <strong>Use Case > Text-to-Embedding</strong> (as shown in your first image).</li>
+            <li>Select an embedding model. By default, the code uses <code>snowflake/arctic-embed-l</code>. If you prefer to use <code>nemotron-3-embed-1b</code> (from your screenshot), you can change the <code>"model"</code> string in <code>AiService.java</code> line 51!</li>
+            <li>Click on "Get API Key" in the top right corner of the dashboard to generate a key starting with <code>nvapi-...</code>.</li>
+            <li>Set this key as an Environment Variable on your server:
+                <div class="code-block">
+                    # On Windows (Command Prompt)<br>
+                    setx NVIDIA_API_KEY "nvapi-your-key-here"<br><br>
+                    # On Linux/Mac<br>
+                    export NVIDIA_API_KEY="nvapi-your-key-here"
+                </div>
+            </li>
+        </ol>
+
+        <h4>User Reference Images:</h4>
+        <img src="file:///C:/Users/thunderX/.gemini/antigravity/brain/c8ea7f66-3f7c-444e-ae9a-e8ce8d3b92c6/.user_uploaded/media_1788270010661.png" alt="NVIDIA Text-to-Embedding Models">
+        <img src="file:///C:/Users/thunderX/.gemini/antigravity/brain/c8ea7f66-3f7c-444e-ae9a-e8ce8d3b92c6/.user_uploaded/media_1788270010673.png" alt="NVIDIA Free Endpoints">
+
+        <h3>Step 3.2: Enabling & Configuring MongoDB Atlas Vector Search</h3>
+        <p>MongoDB handles the math required to compare vectors. Vector Search is fully integrated into MongoDB Atlas, but it requires explicit configuration. <strong>Note: Your MongoDB Atlas Cluster must be running version 6.0.11+ or 7.0.2+ to support Vector Search.</strong></p>
+        
+        <div class="alert alert-warning">
+            <strong>Important Dimension Match:</strong> If you change the model in NVIDIA to <code>nemotron-3-embed-1b</code> or any other model, you must check NVIDIA's documentation to see how many dimensions it outputs (e.g., 4096, 1024, 768). The <code>numDimensions</code> parameter in MongoDB <strong>must exactly match</strong> the output of the model! Our code currently uses <code>snowflake/arctic-embed-l</code> which outputs <strong>1024 dimensions</strong>.
+        </div>
+
+        <ol>
+            <li><strong>Log In:</strong> Access your <a href="https://cloud.mongodb.com" target="_blank">MongoDB Atlas</a> account.</li>
+            <li><strong>Navigate to Search:</strong> From your Database Deployments view, click on your Cluster, then click the <strong>Search</strong> tab.</li>
+            <li><strong>Create Index:</strong> Click the green <strong>Create Search Index</strong> button.</li>
+            <li><strong>Select Configuration Method:</strong> Choose <strong>JSON Editor</strong> under the "Atlas Vector Search" configuration options, then click Next.</li>
+            <li><strong>Select Target:</strong> In the left panel, select your target Database (e.g., <code>emploismaroc</code>) and the Collection <code>job</code>.</li>
+            <li><strong>Name the Index:</strong> You MUST name the index exactly: <code>vector_index</code> (This string is hardcoded in your <code>AdService.java</code> search pipeline).</li>
+            <li><strong>Define the JSON Schema:</strong> Paste the following JSON configuration into the editor:
+                <div class="code-block">
+{
+  "fields": [
+    {
+      "numDimensions": 1024,
+      "path": "embedding",
+      "similarity": "cosine",
+      "type": "vector"
+    }
+  ]
+}
+                </div>
+                <em>Explanation of parameters:</em>
+                <ul>
+                    <li><code>numDimensions: 1024</code> corresponds exactly to the array size returned by NVIDIA.</li>
+                    <li><code>path: "embedding"</code> is the field name we added to the <code>Ad.java</code> model.</li>
+                    <li><code>similarity: "cosine"</code> is the mathematical formula used to measure how close two vectors are (Cosine Similarity is the standard for text embeddings).</li>
+                </ul>
+            </li>
+            <li><strong>Build the Index:</strong> Click <strong>Next</strong>, review your settings, and click <strong>Create Search Index</strong>. The index status will show as <em>Pending</em> and then <em>Active</em> once it's ready. (This might take a few minutes).</li>
+        </ol>
+
+        <h3>Step 3.3: Backfilling Existing Jobs</h3>
+        <p>New jobs get embeddings automatically. For your old jobs, run the script I provided:</p>
+        <div class="code-block">
+            Run the main() method in:<br>
+            src/main/java/com/centoria/jobmaroc/scripts/BackfillEmbeddings.java
+        </div>
+        <p>This will loop through all existing jobs, fetch an embedding for them via NVIDIA, and save the array into MongoDB, fully preparing your database for AI Search.</p>
+    </div>
+
+</body>
+</html>

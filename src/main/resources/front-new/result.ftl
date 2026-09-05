@@ -175,6 +175,11 @@
                                 <#if job.title??>
                                     <a class="titreOffre" href="/offre-emploi-maroc/${job.key}" title="${job.title}">${job.title}</a>
                                 </#if>
+                                <#if job.matchScore??>
+                                    <span class="badge" style="background-color: #28a745; color: white; margin-left: 10px; font-size: 0.8em; padding: 3px 8px;">
+                                        ⭐ AI Match: ${(job.matchScore * 100)?string("0")}%
+                                    </span>
+                                </#if>
                                 <br><br>
                                 <span><img src="/assets/img/place.png" alt="city">${job.city!''}</span>
                                 <span><img src="/assets/img/business_center.png" alt="type">${job.type!''}</span>
